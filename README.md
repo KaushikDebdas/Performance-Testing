@@ -33,7 +33,7 @@ As of JMeter 4.0, Java 8 and above are supported.
 # Elements of a minimal test plan
 
 * Thread Group
-  The root element of every test plan. Simulates the (concurrent) users and then runs all requests. Each thread simulates a single user.
+    The root element of every test plan. Simulates the (concurrent) users and then run all requests. Each thread simulates a single user.
 * HTTP Request Default (Configuration Element)
 * HTTP Request (Sampler)
 * Summary Report (Listener)

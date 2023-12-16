@@ -77,9 +77,10 @@ As of JMeter 4.0, Java 8 and above are supported.
 ```      
   - **n**: non GUI mode
   - **t**: test plan to execute
-  - **l**: output file with results 
-  Then continue to upgrade Threads(100 to 5000) by keeping Ramp-up Same.   
-  
+  - **l**: output file with results
+
+Then continue to upgrade Threads(100 to 5000) by keeping Ramp-up Same.     
+
 After completing this command  
 
 ### Make html file

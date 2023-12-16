@@ -1,6 +1,6 @@
 # Performance-Testing
 # Introduction
-This document explains how to run a performance test with JMeter.
+Welcome to the performance testing repository for the [restful-booker API ](https://restful-booker.herokuapp.com) using Apache JMeter. This document explains how to run a performance test with JMeter.
 
 Dear,
 
@@ -95,9 +95,9 @@ After completing this command
 
 Dear,
 
-I’ve completed a performance test on frequently used API for the test App https://restful-booker.herokuapp.com/.
+I’ve completed a performance test on frequently used API for the test App [restful-booker API ](https://restful-booker.herokuapp.com).
 
-Test executed for the below-mentioned scenario in server https://restful-booker.herokuapp.com/.
+Test executed for the below-mentioned scenario in server [restful-booker API ](https://restful-booker.herokuapp.com).
 
 * 100 Concurrent Request with 10 Loop Count; Avg TPS for Total Samples is ~ 10 And Total Concurrent API requested: 600.
 * 500 Concurrent Request with 10 Loop Count; Avg TPS for Total Samples is ~ 50 And Total Concurrent API requested: 3000.

@@ -14,22 +14,26 @@ Test executed for the below-mentioned scenario in server https://restful-booker.
 
 # Install
 # Java
+
 https://www.oracle.com/java/technologies/downloads/
 
 # JMeter
+
 https://jmeter.apache.org/download_jmeter.cgi
 
 Click =>Binaries
 =>apache-jmeter-5.5.zip
 
 # Prerequisites
+
 As of JMeter 4.0, Java 8 and above are supported.
 * We suggest multicore CPUs with 4 or more cores.
 * Memory 16GB RAM is a good value.
 
 # Elements of a minimal test plan
+
 * Thread Group
-The root element of every test plan. Simulates the (concurrent) users and then runs all requests. Each thread simulates a single user.
+  The root element of every test plan. Simulates the (concurrent) users and then runs all requests. Each thread simulates a single user.
 * HTTP Request Default (Configuration Element)
 * HTTP Request (Sampler)
 * Summary Report (Listener)
@@ -57,6 +61,7 @@ The root element of every test plan. Simulates the (concurrent) users and then r
 * Continue open BasicProject_BookingAPI_TG100 to BasicProject_BookingAPI_TG5000
 * Open those file
 * The Test Plan will be loaded
+  
 ![BasicProject_BookingAPI_TG100](https://github.com/KaushikDebdas/Performance-Testing/assets/67013658/3cec7fd4-1777-4a87-bd88-4706f3600635)
 
 # Test execution (from the Terminal)
@@ -74,6 +79,7 @@ The root element of every test plan. Simulates the (concurrent) users and then r
   Then continue to upgrade Threads(100 to 5000) by keeping Ramp-up Same.   
   
 After completing this command  
+
 ### Make html file
 ```bash
   jmeter -g report\BasicProject_BookingAPI_TG100.jtl -o BasicProject_BookingAPI_TG100.html
@@ -82,6 +88,7 @@ After completing this command
   - **o**: path to output folder  
 
 # Result Summary 
+
 Dear,
 
 I’ve completed a performance test on frequently used API for the test App https://restful-booker.herokuapp.com/.

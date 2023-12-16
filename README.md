@@ -40,10 +40,15 @@ The root element of every test plan. Simulates the (concurrent) users and then r
 * Number of Threads (users): 1 to 6
 * Ramp-Up Period (in seconds): 10
 * Loop Count: 1
-** The general setting for the tests execution, such as whether Thread Groups will run simultaneously or sequentially, is specified in the item called Test Plan.
-** All HTTP Requests will use some default settings from the HTTP Request, such as the Server IP, Port Number, and Content-Encoding.
-** Each Thread Group specifies how the HTTP Requests should be carried out. To determine how many concurrent "users" will be simulated, one must first know the number of threads. The number of actions each "user" will perform is determined by the loop count.
-** The HTTP Header Manager, which allows you to provide the Request Headers that will be utilized by the upcoming HTTP Requests, is the first item in Thread Groups.
+
+  1) The general setting for the tests execution, such as whether Thread Groups will run simultaneously or sequentially, is specified in the item called Test Plan.
+
+  2) All HTTP Requests will use some default settings from the HTTP Request, such as the Server IP, Port Number, and Content-Encoding.
+
+  3) Each Thread Group specifies how the HTTP Requests should be carried out. To determine how many concurrent "users" will be simulated, one must first know the number of threads. The number of actions each "user" will perform is determined by the loop count.
+
+  4) The HTTP Header Manager, which allows you to provide the Request Headers that will be utilized by the upcoming HTTP Requests, is the first item in Thread Groups.
+
 
 # Collection of API
 ## Load the JMeter Script
@@ -59,19 +64,19 @@ The root element of every test plan. Simulates the (concurrent) users and then r
 * Make a report folder in the bin folder.
 * Run Command in jmeter\bin folder.
 
-## Make jtl file
+### Make jtl file
 ```bash
-  jmeter -n -t  OPENCART_T1.jmx -l OPENCART_T1.jtl
+  jmeter -n -t BasicProject_BookingAPI_TG100.jmx -lBasicProject_BookingAPI_TG100.jtl
 ```      
   - **n**: non GUI mode
   - **t**: test plan to execute
   - **l**: output file with results 
-  Then continue to upgrade Threads(1 to 6) by keeping Ramp-up Same.   
+  Then continue to upgrade Threads(100 to 5000) by keeping Ramp-up Same.   
   
 After completing this command  
-## Make html file
+### Make html file
 ```bash
-  jmeter -g report\OPENCART_T1.jtl -o OPENCART_T1.html
+  jmeter -g report\BasicProject_BookingAPI_TG100.jtl -o BasicProject_BookingAPI_TG100.html
 ```
   - **g**: jtl results file
   - **o**: path to output folder  
@@ -88,14 +93,19 @@ Test executed for the below-mentioned scenario in server https://restful-booker.
 * 5000 Concurrent Request with 10 Loop Count; Avg TPS for Total Samples is ~ 438 And Total Concurrent API requested: 30000.
 
 # HTML Report
+
 **Number of Threads 100 ; Ramp-Up Period 10s**
+
 ![Number of Threads 100 ; Ramp-Up Period 10s](https://github.com/KaushikDebdas/Performance-Testing/assets/67013658/9df5caaf-ba81-4c58-8d96-ecb6c870c9cb)
 
 **Number of Threads 500 ; Ramp-Up Period 10s**
+
 ![Number of Threads 500 ; Ramp-Up Period 10s](https://github.com/KaushikDebdas/Performance-Testing/assets/67013658/c705ba45-7385-4e60-896c-44a5ceb042f4)
 
 **Number of Threads 1000 ; Ramp-Up Period 10s**
+
 ![Number of Threads 1000 ; Ramp-Up Period 10s](https://github.com/KaushikDebdas/Performance-Testing/assets/67013658/d7d24090-f5cf-4690-82b9-c695a4db86d6)
 
 **Number of Threads 5000 ; Ramp-Up Period 10s**
+
 ![Number of Threads 5000 ; Ramp-Up Period 10s](https://github.com/KaushikDebdas/Performance-Testing/assets/67013658/64668c83-6295-48e1-b8f7-52a708920724)

@@ -4,7 +4,7 @@ This document explains how to run a performance test with JMeter.
 
 Dear,
 
-I’ve completed a performance test on frequently used API for the test App [restful-booker API]([url](https://restful-booker.herokuapp.com))
+I’ve completed a performance test on frequently used API for the test App [restful-booker API]([urlhttps://restful-booker.herokuapp.com])
 
 Test executed for the below-mentioned scenario in server https://restful-booker.herokuapp.com/.
 
